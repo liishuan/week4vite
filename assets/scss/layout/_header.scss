@@ -1,0 +1,58 @@
+// 第一欄 nav
+
+.nav {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.navLogo {
+  width: auto;
+  height: 72px;
+}
+
+.nav a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  display: block;
+}
+
+.nav > .container {
+  align-items: center;
+}
+
+// 平板
+@media (max-width: 992px) {
+  .nav {
+    padding: 16px 36px;
+  }
+}
+
+// 平板以下
+@media (max-width: 768px) {
+  .nav > .container {
+    flex-direction: column;
+    align-items: start;
+  }
+  .nav {
+    padding: 0px;
+  }
+
+  .nav h1 {
+    padding: 0px 0px 0px 15px;
+  }
+  .nav ul {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .nav li {
+    border: 1px solid white;
+    margin-right: 0;
+    width: 50%;
+  }
+  .navItem a {
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+  }
+}

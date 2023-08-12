@@ -1,0 +1,104 @@
+// 第一欄 門市據點
+.location {
+  padding: 96px 0px 80px 0px;
+  h2 {
+    border-left: 8px solid #9f1213;
+    padding-left: 16px;
+  }
+
+  // 是下在select不是option!!!
+  select {
+    padding: 6px 12px;
+    font-size: 18px;
+    color: #495057;
+    border: 1px solid #ced4da;
+    width: 304px;
+  }
+
+  .store {
+    // width: 40%;
+    height: 224px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/storepage-1.png);
+  }
+
+  h3 {
+    padding: 8px 24px;
+    border: 1px solid #00000020;
+  }
+
+  ul {
+    padding: 16px 24px;
+    border: 1px solid #00000020;
+  }
+  .map {
+    width: 58%;
+  }
+}
+
+@media (max-width: 992px) {
+  .location {
+    padding: 80px 36px 80px 36px;
+
+    .content {
+      flex-direction: column;
+      max-width: 696px;
+    }
+    .card {
+      display: flex;
+      margin-bottom: 24px;
+      margin-right: 0;
+      justify-content: space-between;
+    }
+    .mr-2-5 {
+      margin-right: 12px;
+    }
+    .fz-5 {
+      font-size: 16px;
+    }
+
+    .store {
+      width: 50%;
+      margin-right: 24px;
+      background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/store-1.png);
+    }
+
+    .cardText {
+      width: 50%;
+    }
+    .map {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .location {
+    padding: 40px 14px 64px 13px;
+
+    .mb-8 {
+      margin-bottom: 24px;
+    }
+    .mb-10 {
+      margin-bottom: 24px;
+    }
+    .fz-12 {
+      font-size: 24px;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .store {
+      width: 100%;
+      margin-right: 0px;
+    }
+    .cardText {
+      width: 100%;
+    }
+  }
+}
+
+// 第一欄 常見問題

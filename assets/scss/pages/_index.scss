@@ -1,0 +1,271 @@
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+// 第二塊 banner
+.banner {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png);
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner .container {
+  height: 787px;
+}
+
+.banner .textbox {
+  padding-top: 296px;
+  margin: 0 0 0 auto;
+  max-width: 576px;
+  text-align: right;
+}
+
+// 平板
+@media (max-width: 992px) {
+  .banner {
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+// 平板以下
+@media (max-width: 768px) {
+  .banner .container {
+    height: 396px;
+  }
+
+  .banner .textbox {
+    padding-top: 144px;
+    margin-right: 14px;
+  }
+
+  .banner .fz-9 {
+    font-size: 16px;
+  }
+  .banner .fz-16 {
+    font-size: 24px;
+  }
+  .banner h2 {
+    margin-bottom: 8px;
+  }
+  .banner a {
+    font-size: 20px;
+  }
+}
+
+// 第三塊 用專業的心做專業的事
+.point {
+  width: 306px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.point img {
+  height: 100px;
+  width: 100px;
+}
+
+.pink {
+  padding: 80px;
+}
+
+// 平板
+@media (max-width: 992px) {
+  .points {
+    padding: 80px 36px 56px 36px;
+  }
+  .point {
+    width: 48%;
+    margin-bottom: 24px;
+  }
+}
+
+// 平板以下
+@media (max-width: 768px) {
+  .points {
+    padding: 40px 12px 8px 12px;
+  }
+
+  .points h3 {
+    font-size: 24px;
+  }
+  .point {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+
+// 第四塊  經典系列鏡框
+.series li {
+  max-width: 33.3%;
+  // flex: 1;
+}
+// 在桌機版時，不知道為什麼li下面會有一個詭異的空間
+// 不知道要怎麼讓每個li一起隨著畫面縮小放大，而非其中一個而已
+// 是要用flex=1嗎?
+// 求助教解惑 QAQ
+
+// 平板
+@media (max-width: 992px) {
+  .classic {
+    padding: 80px 80px 56px 80px;
+  }
+  .series {
+    flex-wrap: wrap;
+  }
+  .series li {
+    max-width: 336px;
+    height: auto;
+    margin-right: 0px;
+    margin-bottom: 24px;
+  }
+}
+// 請問助教，在沒有響應式之前可以把padding:20px; 用.p-20放在class裡面使用，但用到響應式的時候要通常padding會變小，要做更改的話只有上面這種方式去做更改嗎?還是會直接把定義p-20這個class名稱裡面的內容，變成.p-20{padding:10px;}之類的?謝謝助教~~
+
+// 平板以下
+@media (max-width: 768px) {
+  .classic {
+    padding: 40px 12px 16px 12px;
+  }
+  .classic h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .series li {
+    max-width: 348px;
+  }
+}
+
+// 第五塊 聯名
+.collab {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.collab p {
+  background-color: white;
+}
+// 平板
+@media (max-width: 992px) {
+  .collab ul {
+    flex-wrap: wrap;
+  }
+  .collab li {
+    margin-bottom: 24px;
+  }
+  .collab {
+    padding: 80px 36px 56px 36px;
+  }
+}
+
+// 平板以下
+@media (max-width: 768px) {
+  .collab {
+    padding: 40px 12px 16px 12px;
+  }
+  .collab h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+// 第六塊 顧客推薦
+.customer li {
+  max-width: 25%;
+  // 陰影
+  box-shadow: 0px 2px 6px #00000029;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.customer .card {
+  height: 205px;
+}
+
+// 平板
+@media (max-width: 992px) {
+  .customer {
+    padding: 80px 36px 56px 36px;
+  }
+  .customer ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .customer li {
+    max-width: 48%;
+    margin-right: 0px;
+    margin-bottom: 24px;
+  }
+}
+
+//平板以下
+@media (max-width: 768px) {
+  .customer {
+    padding: 40px 12px 24px 12px;
+  }
+  .customer h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .customer ul {
+    justify-content: center;
+  }
+  .customer li {
+    max-width: 100%;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+}
+
+// 第七塊 聯絡我們
+.smallContainer {
+  max-width: 636px;
+  margin: 0 auto;
+}
+
+.pink label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.fullWidth input,
+textarea {
+  width: 100%;
+  text-indent: 12px;
+  background: transparent;
+}
+
+.policyAgree label,
+input {
+  display: inline;
+}
+
+// 平板
+@media (max-width: 992px) {
+  .contact {
+    padding: 80px 96px 80px 96px;
+  }
+}
+
+// 平板以下
+@media (max-width: 768px) {
+  .contact {
+    padding: 40px 14px 40px 14px;
+  }
+  .contact h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .btnBig {
+    padding: 16px 141px;
+  }
+}

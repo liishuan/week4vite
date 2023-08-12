@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>faq</title>
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <!-- 第一欄 門市據點 -->
+
+    <div class="location">
+      <div class="container">
+        <h2 class="fz-12 mb-8 bold Noto">門市據點</h2>
+        <div class="select mb-10 d-flex alignItemsCenter">
+          <p class="mr-4">選擇分店</p>
+          <select name="location" id="location">
+            <option value="">台北中山旗艦店</option>
+            <option value="">台中一中店</option>
+            <option value="">高雄苓雅店</option>
+          </select>
+        </div>
+        <div class="content d-flex">
+          <div class="card mr-6">
+            <div class="store">
+              <!-- <img
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/storepage-1.png"
+                alt="台北中山旗艦店"
+              /> -->
+            </div>
+            <div class="cardText">
+              <h3 class="fz-6">台北中山旗艦店</h3>
+              <ul>
+                <li class="d-flex alignItemsCenter mb-2">
+                  <span class="material-symbols-outlined mr-2-5"> call </span>
+                  <p fz-5>電話：(02)000-1234</p>
+                </li>
+
+                <li class="d-flex alignItemsCenter mb-2">
+                  <span class="material-symbols-outlined mr-2-5">
+                    schedule
+                  </span>
+                  <p fz-5>營業時間：10:00-21:00</p>
+                </li>
+
+                <li class="d-flex alignItemsStart mb-2">
+                  <span class="material-symbols-outlined mr-2-5">
+                    location_on
+                  </span>
+                  <p fz-5>地址：台北市中山區南京東路25巷2-1號</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="map">
+            <img src="../assets/images/googlemap.png" alt="google地圖" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
